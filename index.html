@@ -29,8 +29,8 @@
         #div-4 {
             display: flex;
             align-items: center;
-            justify-content: center;
-
+            align-self:center;
+            justify-content: space-between;
         }
 
 
@@ -52,7 +52,7 @@
 
         #fl {
             justify-content: space-between;
-            padding: 10px;
+            padding: 100px;
         }
 
         .content-1 {
@@ -178,7 +178,7 @@
                         </div>
                         <div class="col order-last">
                             <h2 id="IP">Personal information</h2>
-                            <table style="width: 400px; height: 232px;" align="center" class="table table-sm">
+                            <table style="width: 400px; height: 232px;" class="table table-sm">
                                 <tbody>
                                     <tr>
                                         <th>Born date</th>
@@ -398,9 +398,9 @@
                                             specially now with the Corona Virus and quarantine</li>
                                         <li class="list-group-item list-group-item-light">My favorite song is:
                                             <audio preload="auto" controls>
-                                                <source src="song.ogg" type="audio/ogg">
-                                                <source src="song.mp3" type="audio/mp3">
-                                                <source src="song.wav" type="audio/wav">
+                                                <source src="./assets/song.ogg" type="audio/ogg">
+                                                <source src="./assets/song.mp3" type="audio/mpeg">
+                                                <source src="./assets/song.wav" type="audio/wav">
                                             </audio></li>
                                     </ul>
                                 </div>
@@ -427,7 +427,7 @@
         </section>
     </main>
     <footer>
-        <div id="div-4">
+        <div class="row" id="div-4">
             <div class="col-sm">
                 <a class="btn btn-success" href="https://api.whatsapp.com/send?phone= +57 314 467 9915">Whatsapp</a>
             </div>
