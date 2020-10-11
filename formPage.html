@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incripcion inicial</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="styleForm.css" />
+
+    <!--Script js-->
+    <script src="indexForm.js" async></script>
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- multistep form -->
+    <form id="msform" name="cambiar">
+      <!-- progressbar -->
+      <ul id="progressbar">
+        <li class="active">Hoja de vida</li>
+        <li>Ofertas</li>
+        <li>Finalizacion</li>
+      </ul>
+      <!-- fieldsets -->
+      <fieldset>
+        <h2 class="fs-title">Completa los datos para tu hoja de vida</h2>
+        <hr />
+        <h3 class="fs-subtitle">I. Información General</h3>
+        <div class="container" id="contenedor">
+          <div id="ocultar" class="collapse show">
+            <div class="row row-cols-2">
+              <div class="col campo">
+                <label for="nombre">Nombre(s)</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Nombre(s)"
+                />
+              </div>
+              <div class="col campo">
+                <label for="apellido">Apellidos</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Apellidos"
+                />
+              </div>
+              <div class="col campo">
+                <label for="dir">Dirección</label>
+                <input
+                  type="text"
+                  id="dir"
+                  name="dir"
+                  placeholder="Direccion domicilio/ Barrio"
+                />
+              </div>
+              <div class="col campo">
+                <label for="ciudad">Ciudad</label>
+                <input
+                  type="text"
+                  id="ciudad"
+                  name="ciudad"
+                  placeholder="Cuidad"
+                />
+              </div>
+              <div class="col campo">
+                <label for="tel">Telefono</label>
+                <input type="text" id="tel" name="tel" placeholder="Telefono" />
+              </div>
+              <div class="col campo">
+                <label for="cel">Celular</label>
+                <input type="text" id="cel" name="cel" placeholder="Celular" />
+              </div>
+              <div class="col campo">
+                <label for="mail">Correo Electónico</label>
+                <input
+                  type="text"
+                  id="mail"
+                  name="mail"
+                  placeholder="correo electronico"
+                />
+              </div>
+              <div class="col campo">
+                <label for="nacionalidad">Nacionalidad</label>
+                <input
+                  type="text"
+                  id="nacionalidad"
+                  name="nacionalidad"
+                  placeholder="Nacionalidad"
+                />
+              </div>
+              <div class="col campo">
+                <label for="estadoCivil">Estado Civil</label>
+                <input
+                  type="text"
+                  id="estadoCivil"
+                  name="estadoCivil"
+                  placeholder="Estado civil"
+                />
+              </div>
+              <div class="col campo">
+                <label for="experiencia">Años de experiencia</label>
+                <input
+                  type="text"
+                  id="experiencia"
+                  name="experiencia"
+                  placeholder="Años de experiencia"
+                />
+              </div>
+              <div class="col-12 campo2 border rounded" id="mt">
+                <label for="numeroTM">Libreta militar</label>
+                <div class="row row-cols-2">
+                  <div class="col campo">
+                    <input
+                      type="text"
+                      id="numeroTM"
+                      name="numeroTM"
+                      placeholder="Numero"
+                    />
+                  </div>
+                  <div class="col campo">
+                    <input
+                      type="text"
+                      iid="distritoTM"
+                      name="distritoTM"
+                      placeholder=" # de Distrito"
+                    />
+                  </div>
+                </div>
+
+                <div class="col campo">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >Primera clase</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >Segunda clase</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="bot">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-target="#ocultar"
+              data-toggle="collapse"
+            >
+              Ocultar/Mostrar
+            </button>
+          </div>
+        </div>
+
+        <hr />
+        <h3 class="fs-subtitle">II. Información Personal</h3>
+        <div class="container">
+          <div class="form-check campo">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck1"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Trabaja actualmente
+            </label>
+          </div>
+          <div class="form-check campo" id="bot2">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="defaultCheck1"
+              data-target="#ocultar2"
+              data-toggle="collapse"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              Lo recomiendan
+            </label>
+          </div>
+
+          <div id="ocultar2" class="collapse">
+            <div class="row row-cols-2">
+              <div class="col campo">
+                <label for="experiencia">Nombre de la persona</label>
+                <input
+                  type="text"
+                  id="nombreE"
+                  name="nombreE"
+                  placeholder="Nombre persona"
+                />
+              </div>
+              <div class="col campo">
+                <label for="experiencia">Dependencia</label>
+                <input
+                  type="text"
+                  id="dependencia"
+                  name="dependencia"
+                  placeholder="Dependencia"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h3 class="fs-subtitle">III. Mencione sus espectativas (opcional)</h3>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1"
+            >Describa brevemente sus espectativas</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+        <h3 class="fs-subtitle">
+          III. Selececione el o los campos donde mejor se desempeña o tiene
+          alguna experiencia
+        </h3>
+        <select class="form-control">
+          <option>---</option>
+          <option>Barnista</option>
+          <option>Maestro de obras</option>
+          <option>Albañil</option>
+          <option>Jardinero</option>
+        </select>
+        <select class="form-control">
+          <option>---</option>
+          <option>Barnista</option>
+          <option>Maestro de obras</option>
+          <option>Albañil</option>
+          <option>Jardinero</option>
+        </select>
+        <select class="form-control">
+          <option>---</option>
+          <option>Barnista</option>
+          <option>Maestro de obras</option>
+          <option>Albañil</option>
+          <option>Jardinero</option>
+        </select>
+        <hr />
+        <h3 class="fs-subtitle">
+          Cargue su hoja de vida si la tienes en digital
+        </h3>
+        <div class="custom-file">
+          <input
+            type="file"
+            class="custom-file-input"
+            id="validatedCustomFile"
+            required
+          />
+          <label class="custom-file-label" for="validatedCustomFile"
+            >Escoger archivo...</label
+          >
+          <div class="invalid-feedback">Archivo invalido</div>
+        </div>
+
+        <input
+          type="button"
+          name="Siguiente"
+          class="next action-button"
+          value="Siguiente"
+        />
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">
+          Basados en tu perfil de tecomentamos las siguientes ofertas
+        </h2>
+        <hr />
+        <h3 class="fs-subtitle">Ofertas de barnismo</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./media/amarilo-logo.png"
+                  alt="logo amarilo"
+                  width="50px"
+                  height="147px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Amarilo - Constructora</h5>
+                  <p class="card-text">Trabajo como albañil</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Oferta: Contrato por a termino definido
+                    </li>
+                    <li class="list-group-item">
+                      Pago: 1'000.000 con bonificaciones
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Aplicar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./media/cusezar-logo.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cusezar</h5>
+                  <p class="card-text">Trabajo como albañil</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Oferta: Contrato por a termino definido
+                    </li>
+                    <li class="list-group-item">
+                      Pago: 1'500.000 con bonificaciones
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Aplicar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h3 class="fs-subtitle">Mira más Ofertas</h3>
+        <select class="form-control">
+          <option>Opcion 1</option>
+          <option>Opcion 2</option>
+          <option>Opcion 2</option>
+          <option>Opcion 3</option>
+          <option>Opcion 4</option>
+          <option>Opcion 5</option>
+        </select>
+        <select class="form-control">
+          <option>Opcion 1</option>
+          <option>Opcion 2</option>
+          <option>Opcion 2</option>
+          <option>Opcion 3</option>
+          <option>Opcion 4</option>
+          <option>Opcion 5</option>
+        </select>
+
+        <input
+          type="button"
+          name="previous"
+          class="previous action-button"
+          value="Anterior"
+        />
+        <input
+          type="button"
+          name="next"
+          class="next action-button"
+          value="Siguiente"
+        />
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">Aplicaste a estas ofertas</h2>
+        <h3 class="fs-subtitle">Pendiente a la fecha limite de comunicación</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./media/amarilo-logo.png"
+                  alt="logo amarilo"
+                  width="50px"
+                  height="147px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Amarilo - Constructora</h5>
+                  <p class="card-text">Trabajo como albañil</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Oferta: Contrato por a termino definido
+                    </li>
+                    <li class="list-group-item">
+                      Pago: 1'000.000 con bonificaciones
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Aplicar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./media/cusezar-logo.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cusezar</h5>
+                  <p class="card-text">Trabajo como albañil</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Oferta: Contrato por a termino definido
+                    </li>
+                    <li class="list-group-item">
+                      Pago: 1'500.000 con bonificaciones
+                    </li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Aplicar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          type="button"
+          name="previous"
+          class="previous action-button"
+          value="Anterior"
+        />
+        <input
+          type="submit"
+          name="btnSubmit"
+          class="submit action-button"
+          value="Enviar"
+          onClick="enviar('jobs.html')"
+        />
+      </fieldset>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  </body>
+</html>
